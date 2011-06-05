@@ -1,0 +1,167 @@
+/* Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	clear: both;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote {
+	quotes: none;
+}
+blockquote:before, blockquote:after {
+	content: '';
+	content: none;
+}
+del {
+	text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a img { border: none; }
+
+/**
+ * Google Fonts API
+ * copied from: http://fonts.googleapis.com/css?family=Droid+Serif:b,r|Droid+Sans:b,bi,i,r
+ **/
+/* Droid Sans (style: italic, weight: 700) is not available */
+/* However, style: normal, weight: normal is available */
+/* However, style: normal, weight: bold is available */
+/* Droid Sans (style: italic, weight: 400) is not available */
+/* However, style: normal, weight: normal is available */
+/* However, style: normal, weight: bold is available */
+@font-face {
+  font-family: 'Droid Serif';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Droid Serif Bold'), local('DroidSerif-Bold'), url('http://themes.googleusercontent.com/font?kit=QQt14e8dY39u-eYBZmppwTqR_3kx9_hJXbbyU8S6IN0') format('woff');
+}
+@font-face {
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Droid Sans'), local('DroidSans'), url('http://themes.googleusercontent.com/font?kit=s-BiyweUPV0v-yRb-cjciBsxEYwM7FgeyaSgU71cLG0') format('woff');
+}
+@font-face {
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Droid Sans Bold'), local('DroidSans-Bold'), url('http://themes.googleusercontent.com/font?kit=EFpQQyG9GqCrobXxL-KRMQFhaRv2pGgT5Kf0An0s4MM') format('woff');
+}
+@font-face {
+  font-family: 'Droid Serif';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Droid Serif'), local('DroidSerif'), url('http://themes.googleusercontent.com/font?kit=0AKsP294HTD-nvJgucYTaIbN6UDyHWBl620a-IRfuBk') format('woff');
+}
+
+
+/**
+ * Front
+ **/
+
+#wrapper {
+    font-family: 'Droid Sans', 'Bitstream Vera Sans', sans-serif;
+}
+
+#logo {
+    box-shadow: 0px 0px 4px #888;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+#welcome {
+    border: 2px dashed #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px #888 inset;
+    line-height: 20px;
+    margin: 250px auto;
+    padding: 20px 20px;
+    position: relative;
+    width: 200px;
+    word-spacing: 2px;
+}
+
+.expandarrow {
+    bottom: 8px;
+    font-size: 1.5em;
+    position: absolute;
+    right: 8px;
+}
+
+/**
+ * Right stuff
+ **/
+
+#blogtab {
+    color: #00425a;
+    font-size: 4em;
+    position: absolute;
+    text-shadow: 0 -1px 0 #ddd;
+    top: 350px;
+    right: 0;
+    -webkit-transform:  rotate(270deg);
+    -moz-transform:  rotate(270deg);
+    -o-transform:  rotate(270deg);
+}
+
+/**
+ * Bottom stuff
+ **/
+
+#basides {
+    bottom: 0;
+    position: absolute;
+    margin-left: -530px;
+    left: 50%;
+    width: 1060px;
+}
+
+.baside {
+    background: #ddd;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    float: left;
+    margin-right: 50px;
+    padding: 15px 10px 10px;
+    width: 300px;
+}
+
+.baside-1 {
+}
+
+.baside-2 {
+}
+
+.baside-3 {
+    margin-right: 0;
+}
+
+.basideheader {
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    text-align: center;
+}
