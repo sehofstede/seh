@@ -5,34 +5,66 @@
 <meta name="author" content="Sense Hofstede" />
 <link rel="stylesheet" type="text/css" media="all" href="./style.css" />
 <title>SenseHofstede.nl</title>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js'></script>
+<!-- source: http://css-tricks.com/scrollfollow-sidebar/ -->
+<script type="text/javascript">
+$(function() {
+
+    var $blog       = $("#blog"),
+        $blogtab    = $("#blogtab");
+
+    function placeBlog() {
+        var bottom = $blogtab.outerHeight(true) - $blog.height();
+        $blog.css("bottom", bottom + "px");
+    }
+
+    $(document).ready(placeBlog);
+    $(window).resize(placeBlog);
+
+    $("#blogtab > a").live("click", function(event){
+        event.preventDefault();
+    });
+
+    $blogtab.click(function(){
+         	$('html,body').animate({scrollTop: $blog.offset().top},'slow');
+         	var stateObj = { pos: "blog" };
+            history.pushState(stateObj, "Blog", "#blog");
+    });
+
+});
+</script>
 </head>
 <body>
 <div id="wrapper">
     <div id="welcome">
         <img src="./images/seh-rounded-100.png" id="logo" alt="SH"/>
-        <a href="">Sense Hofstede</a> is lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <div class="expandarrow">&#x21F2;</div>
+        <a href="">Sense Hofstede</a> is lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a href="" title="About Sense Hofstede" class="expandarrow">&#x21F2;</a>
     </div>
-    <div id="blog">
-        <div id="blogtab">
-            &darr; Blog &darr;
-        </div>
-    </div>
-    <div id="basides">
-        <div class="baside baside-1" id="twitter">
-            <div class="basideheader" id="twitterheader">
+    <div id="rasides">
+        <div class="raside raside-1" id="twitter">
+            <div class="rasideheader" id="twitterheader">
                 Twitter
             </div>
         </div>
-        <div class="baside baside-2" id="facebook">
-            <div class="basideheader" id="facebookheader">
+        <div class="raside raside-2" id="facebook">
+            <div class="rasideheader" id="facebookheader">
                 Facebook
             </div>
         </div>
-        <div class="baside baside-3" id="linkedin">
-            <div class="basideheader" id="linkedinheader">
+        <div class="raside raside-3" id="linkedin">
+            <div class="rasideheader" id="linkedinheader">
                 LinkedIn
             </div>
         </div>
+    </div>
+    <div id="blog">
+        <div id="blogtab">
+            <a href="#blog" title="Blog">&darr; Blog &darr;</a>
+        </div>
+        Content, content.
+        <br/>
+        is lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        <br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p
     </div>
 </div>
 </body>

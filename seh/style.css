@@ -78,14 +78,18 @@ a img { border: none; }
   src: local('Droid Serif'), local('DroidSerif'), url('http://themes.googleusercontent.com/font?kit=0AKsP294HTD-nvJgucYTaIbN6UDyHWBl620a-IRfuBk') format('woff');
 }
 
-
 /**
- * Front
+ * Basic
  **/
 
 #wrapper {
     font-family: 'Droid Sans', 'Bitstream Vera Sans', sans-serif;
+    min-width: 600px;
 }
+
+/**
+ * Front
+ **/
 
 #logo {
     box-shadow: 0px 0px 4px #888;
@@ -98,11 +102,16 @@ a img { border: none; }
     border-radius: 10px;
     box-shadow: 0px 0px 4px #888 inset;
     line-height: 20px;
-    margin: 250px auto;
+    margin: 10% auto 0;
     padding: 20px 20px;
     position: relative;
     width: 200px;
     word-spacing: 2px;
+}
+
+a.expandarrow {
+    color: #000;
+    text-decoration: none;
 }
 
 .expandarrow {
@@ -116,51 +125,64 @@ a img { border: none; }
  * Right stuff
  **/
 
-#blogtab {
-    color: #00425a;
-    font-size: 4em;
+#blog {
+    bottom: 0;
+    left: 2.5%;
+    padding-top: 2.5%;
     position: absolute;
+    width: 95%;
+}
+
+#blogtab a {
+    color: #00425a;
+    text-decoration: none;
+}
+
+#blogtab {
+    background: #ddd;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #00425a;
+    font-size: 3em;
+    height: 50px;
+    letter-spacing: 2px;
+    padding: 20px 0;
+    text-align: center;
     text-shadow: 0 -1px 0 #ddd;
-    top: 350px;
-    right: 0;
-    -webkit-transform:  rotate(270deg);
-    -moz-transform:  rotate(270deg);
-    -o-transform:  rotate(270deg);
 }
 
 /**
  * Bottom stuff
  **/
 
-#basides {
-    bottom: 0;
-    position: absolute;
-    margin-left: -530px;
-    left: 50%;
-    width: 1060px;
+#rasides {
+    display: none;
+    float: right;
 }
 
-.baside {
+.raside {
     background: #ddd;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    float: left;
-    margin-right: 50px;
+    margin-left: 50px;
     padding: 15px 10px 10px;
     width: 300px;
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
 }
 
-.baside-1 {
+.raside-1 {
 }
 
-.baside-2 {
+.raside-2 {
 }
 
-.baside-3 {
-    margin-right: 0;
+.raside-3 {
+    margin-left: 0;
 }
 
-.basideheader {
+.rasideheader {
     font-size: 1.1em;
     letter-spacing: 2px;
     text-align: center;
