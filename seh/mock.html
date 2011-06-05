@@ -14,7 +14,7 @@ $(function() {
         $blogtab    = $("#blogtab");
 
     function placeBlog() {
-        var bottom = $blogtab.outerHeight(true) - $blog.height();
+        var bottom = $blogtab.outerHeight(true) + parseInt($blog.css("padding-top").replace("px", "")) - $blog.outerHeight(true);
         $blog.css("bottom", bottom + "px");
     }
 
@@ -40,31 +40,33 @@ $(function() {
         <img src="./images/seh-rounded-100.png" id="logo" alt="SH"/>
         <a href="">Sense Hofstede</a> is lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a href="" title="About Sense Hofstede" class="expandarrow">&#x21F2;</a>
     </div>
-    <div id="rasides">
-        <div class="raside raside-1" id="twitter">
-            <div class="rasideheader" id="twitterheader">
-                Twitter
-            </div>
-        </div>
-        <div class="raside raside-2" id="facebook">
-            <div class="rasideheader" id="facebookheader">
-                Facebook
-            </div>
-        </div>
-        <div class="raside raside-3" id="linkedin">
-            <div class="rasideheader" id="linkedinheader">
-                LinkedIn
-            </div>
-        </div>
-    </div>
     <div id="blog">
         <div id="blogtab">
             <a href="#blog" title="Blog">&darr; Blog &darr;</a>
         </div>
-        Content, content.
-        <br/>
-        is lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        <br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p
+        <div id="content">
+            Content, content.
+            <br/>
+            is lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p<br/>p
+        </div>
+    </div>
+    <div id="sidebar">
+        <div class="sientry">
+            <a href="https://twitter.com/sehof" title="Twitter" target="_blank"><img src="./images/twitter.png" alt="Twitter"/></a>
+        </div>
+        <div class="sientry">
+            <a href="http://www.facebook.com/sensehofstede" title="Facebook" target="_blank"><img src="./images/facebook.png" alt="Facebook"/></a>
+        </div>
+        <div class="sientry">
+            <a href="http://nl.linkedin.com/in/sensehofstede" title="LinkedIn" target="_blank"><img src="./images/linkedin.png" alt="LinkedIn"/></a>
+        </div>
+        <div class="sientry">
+            <a href="" title="Coding"><img src="./images/cog_alt_32x32.png" alt="Coding"/></a>
+        </div>
+        <div class="sientry">
+            <a href="" title="Contact"><img src="./images/at_32x32.png" alt="Contact"/></a>
+        </div>
     </div>
 </div>
 </body>
