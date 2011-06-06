@@ -114,11 +114,66 @@ a img { border: none; }
     border-radius: 10px;
     box-shadow: 0px 0px 4px #888 inset;
     line-height: 20px;
+    height: 300px;
     margin: 10% auto 0;
-    padding: 20px 20px;
+    overflow: hidden;
+    padding-top: 20px;
     position: relative;
-    width: 200px;
+    width: 300px;
     word-spacing: 2px;
+}
+
+#fronttext {
+    font-size: 79%;
+    height: 160px;
+    left: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 140px;
+    width: 260px;
+}
+
+#fronttext strong {
+    font-size: 125%;
+}
+
+#frontsidetext {
+    height: 160px;
+    left: 300px;
+    overflow: hidden;
+    position: absolute;
+    top: 140px;
+    width: 200px;
+}
+
+#frontbottomtext {
+    font-size: 90%;
+    height: 150px;
+    left: 20px;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    top: 350px;
+    width: 480px;
+}
+
+ul#codelist {
+    margin-top: 30px;
+    list-style: none;
+}
+
+#codelist > li {
+    display: inline;
+    margin-right: 30px;
+}
+
+#codelist > li:last-child {
+    margin-right: 0;
+}
+
+#codelist img {
+    margin-top: 0;
+    margin-bottom: auto;
 }
 
 a.expandarrow {
@@ -133,6 +188,8 @@ a.expandarrow {
     right: 8px;
 }
 
+.phonetics {
+}
 /**
  * Blog stuff
  **/
