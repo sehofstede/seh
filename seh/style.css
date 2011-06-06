@@ -1,3 +1,14 @@
+/*
+Theme Name: seh
+Theme URI: http://www.sensehofstede.nl/
+Description: This is the theme for SenseHofstede.nl, based on TwentyTen. It is supposed to be used on a personal website, where the owner is more important than his blog.
+Author: Sense Egbert Hofstede <code@sensehofstede.nl>
+Version: 0.1
+License: GNU General Public License 2.0
+License URI: license.txt
+Tags: blue, white, threaded-comments, translation-ready, microformats
+*/
+
 /* Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
 -------------------------------------------------------------- */
 
@@ -187,3 +198,24 @@ a.expandarrow {
     height: 32px;
     width: 32px;
 }
+
+/**
+ * IE hacks
+ */
+.ie-shadow {
+    display: none;
+}
+<!--[if IE]>
+.ie-shadow {
+    display: block;
+}
+.ie-sientry-shadow {
+    position: absolute;
+    top: 2px;
+    left: -2px;
+    z-index: 1;
+    background: #888;
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='2', MakeShadow='true', ShadowOpacity='0.50');
+    -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius='2', MakeShadow='true', ShadowOpacity='0.50')";
+}
+<![endif]-->

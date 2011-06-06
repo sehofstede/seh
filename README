@@ -1,11 +1,10 @@
 This is the theme for SenseHofstede.nl
 
-Because the CSS, JavaScript and HTML can be accessed by anyone via the 
-browser anyway, I am hosting it in a public repository for the benefit of
-all of mankind, etc.
+It is based on WordPress' TwentyTen and is licensed under the GNU General Public
+License, version 2.
 
-Feel free to reuse what I've done for your own projects, but please do not
-copy the look and feel of my site.
+Please feel free to reuse what I've done for your own projects, but refrain from
+copying the exact look and feel of my site.
 
 Thanks! 
 
@@ -22,3 +21,6 @@ The at sign and cog icon in this repository come from the Iconic icon set by P.J
 The Facebook logo in this repositoryu is a copyrighted trademark of Facebook.
 The LinkedIn logo in this repositoryu is a copyrighted trademark of LinkedIn Corporation.
 The Twitter logo in this repository is a copyrighted trademark of Twitter, I downloaded it from <https://twitter.com/about/resources/logos>. Read the logo guidelines there first before using this image.
+
+The images mentioned above do not fall under the GNU General Public License,
+version 2, but under their own license.
