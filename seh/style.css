@@ -100,6 +100,20 @@ a img { border: none; }
 }
 
 /**
+ * Header
+ **/
+#headerlogo {
+    height: 160px;
+}
+
+#headerlogo #logo {
+    left: 30px;
+    margin: 0;
+    position: absolute;
+    top: 30px;
+}
+
+/**
  * Front
  **/
 
@@ -190,9 +204,18 @@ a.expandarrow {
 
 .phonetics {
 }
+
 /**
  * Blog stuff
  **/
+ 
+#blog-tp-bar > ul {
+    list-style: none;
+}
+
+#blog-tp-bar > ul > li {
+    display: inline;
+}
 
 #blog {
     bottom: 0;
@@ -209,7 +232,7 @@ a.expandarrow {
 }
 
 #blogtab {
-    background: #ddd;
+    background: #eee;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     font-size: 3em;
@@ -220,18 +243,90 @@ a.expandarrow {
     text-shadow: 0 0 2px #888;
 }
 
-#content {
-    background: #ddd;
+#blog #content {
+    background: #eee;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     padding: 20px;
 }
 
 /**
- * Sidebar stuff
+ * Posts
+ **/
+ 
+#posts {
+    margin-top: 50px;
+}
+ 
+.post {
+    margin-top: 70px;
+} 
+
+.entry-title {
+    background: #03738c;
+    color: #fff;
+    font-weight: bold;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 10px;
+}
+
+#blog .entry-title:hover {
+    background: #00425a;
+}
+
+.entry-title a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.entry-content,
+.entry-summary {
+    margin: 50px 15px 45px;
+}
+
+.entry-meta {
+    color: #03738c;
+    font-size: 11px;
+    text-align: right;
+}
+
+.entry-date {
+    font-weight: bold;
+}
+
+.entry-content p,
+.entry-summary p {
+    margin-bottom: 15px;
+}
+
+.entry-utility {
+    font-size: 11px;
+    font-weight: bold;
+    text-align: right;
+}
+
+/**
+ * Single
+ **/
+ 
+#singlepost {
+    background: #eee;
+    border-radius: 10px;
+    margin: 5%;
+    width: 90%;
+}
+
+#singlepost #content {
+    padding: 20px;
+}
+
+/**
+ * Slidebar stuff
  **/
 
-#sidebar {
+#slidebar {
     top: 20%;
     position: fixed;
     right: 0;
@@ -241,12 +336,12 @@ a.expandarrow {
     background: #00425a;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
-    box-shadow: -2px 2px 2px #888;
+    box-shadow: -1px 1px 2px #888;
     margin-bottom: 20px;
     padding: 9px;
 }
 
-#sidebar div.sientry:last-child {
+#slidebar div.sientry:last-child {
     margin-bottom: 0;
 }
 
@@ -268,8 +363,8 @@ a.expandarrow {
 }
 .ie-sientry-shadow {
     position: absolute;
-    top: 2px;
-    left: -2px;
+    top: 1px;
+    left: -1px;
     z-index: 1;
     background: #888;
     filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='2', MakeShadow='true', ShadowOpacity='0.50');
