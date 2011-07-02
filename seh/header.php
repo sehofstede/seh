@@ -11,7 +11,6 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="author" content="Sense Egbert Hofstede" />
-<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/3.0/nl/" />
 <title><?php
 	/*
 	 * Print the <title> tag based on what is being viewed.
