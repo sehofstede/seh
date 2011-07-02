@@ -1,7 +1,7 @@
-This is the theme for SenseHofstede.nl
+This is the theme for the personal website of Sense Hofstede.
 
-It is based on WordPress' TwentyTen and is licensed under the GNU General Public
-License, version 2.
+It is a child theme based on WordPress' TwentyTen and is licensed under the GNU
+General Public License, version 2.
 
 Please feel free to reuse what I've done for your own projects, but refrain from
 copying the exact look and feel of my site.
@@ -21,16 +21,3 @@ Grey:
 
 White:
 #ffffff
-
-== Disclaimer ==
-
-The at sign and cog icon in this repository come from the Iconic icon set by P.J. Onori, which can be downloaded from <http://somerandomdude.com/projects/iconic/> and is licensed under the CC Attribution-Share Alike 3.0 and the OFL.
-The Facebook logo in this repository is a copyrighted trademark of Facebook.
-The GitHub logo in this repository is a copyrighted trademark of GitHub Inc.
-The Launchpad logo in this repository is a copyrighted trademark of Canonical Ltd.
-The LinkedIn logo in this repository is a copyrighted trademark of LinkedIn Corporation.
-The Ohlog logo in this repository is a copyrighted trademark of Black Duck Software.
-The Twitter logo in this repository is a copyrighted trademark of Twitter, I downloaded it from <https://twitter.com/about/resources/logos>. Read the logo guidelines there first before using this image.
-
-The images mentioned above do not fall under the GNU General Public License,
-version 2, but under their own license.

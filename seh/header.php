@@ -1,8 +1,17 @@
-<!DOCTYPE html>
+<?php
+/**
+ * The Header for our theme.
+ *
+ * Displays all of the <head> section and everything up till <div id="main">
+ *
+ * Taken from WordPress Twenty Ten
+ */
+?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-<meta  charset="<?php bloginfo( 'charset' ); ?>" />
-<meta name="author" content="Sense Hofstede" />
+<meta charset="<?php bloginfo( 'charset' ); ?>" />
+<meta name="author" content="Sense Egbert Hofstede" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/3.0/nl/" />
 <title><?php
 	/*
 	 * Print the <title> tag based on what is being viewed.
@@ -21,11 +30,16 @@
 
 	// Add a page number if necessary:
 	if ( $paged >= 2 || $page >= 2 )
-		echo ' | ' . sprintf( __( 'Page %s', 'seh' ), max( $paged, $page ) );
+		echo ' | ' . sprintf( __( 'Page %s', 'twentyten' ), max( $paged, $page ) );
 
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon-iphone.png"/>
+<link rel="apple-touch-icon" type="image/png"sizes="72x72" href="/apple-touch-icon-ipad.png" />
+<link rel="apple-touch-icon" type="image/png"sizes="114x114" href="/apple-touch-icon-iphone4.png" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php
 	/* We add some JavaScript to pages with the comment form
@@ -41,53 +55,17 @@
 	 */
 	wp_head();
 ?>
-<!-- source: http://css-tricks.com/scrollfollow-sidebar/ -->
-<script type="text/javascript">
-$(function() {
-
-    var $blog       = $("#blog"),
-        $blogtab    = $("#blogtab");
-
-    function placeBlog() {
-        var bottom = $blogtab.outerHeight(true) + parseInt($blog.css("padding-top").replace("px", "")) - $blog.outerHeight(true);
-        $blog.css("bottom", bottom + "px");
-    }
-
-    $(document).ready(placeBlog);
-    $(window).resize(placeBlog);
-
-    $("#blogtab > a").live("click", function(event){
-        event.preventDefault();
-    });
-
-    $blogtab.click(function(){
-         	$('html,body').animate({scrollTop: $blog.offset().top},'slow');
-         	var stateObj = { pos: "blog" };
-            history.pushState(stateObj, "Blog", "#blog");
-    });
-    
-<?php if ( is_home() ) : ?>
-    
-    $(".expandarrow,#logo").click(function(event){
-            event.preventDefault();
-            if($("#welcome").width() == 300) {
-                $(".expandarrow").html("&#x21F1;");
-                $("#welcome").animate({height: 500, width: 520}, 'slow');
-            } else {
-                $(".expandarrow").html("&#x21F2;");
-                $("#welcome").animate({height: 300, width: 300}, 'slow');
-            }
-    });
-    
-<?php endif; ?>
-
-});
-</script>
 </head>
-<body <?php body_class(); ?>>
-<div id="wrapper">
-<?php if ( ! is_home() ) : ?>
-    <div id="headerlogo">
-        <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php bloginfo('template_directory'); ?>/images/seh-rounded-100.png" id="logo" alt="SH"/></a>
-    </div>
+
+<?php if ( is_front_page() or is_page() ): ?>
+<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
+<?php else: ?>
+<body <?php body_class(); ?> itemscope itemtype="http://schema.org/Blog">
 <?php endif; ?>
+<div id="wrapper" class="hfeed">
+	<header role="banner">
+		<?php /* Our navigation menu.  If one isn't filled out, wp_nav_menu falls back to wp_page_menu.  The menu assiged to the primary position is the one used.  If none is assigned, the menu with the lowest ID is used.  */ ?>
+		<?php wp_nav_menu( array( 'container' => 'nav', 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
+	</header>
+
+	<div id="main" role="main">
