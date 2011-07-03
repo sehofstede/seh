@@ -28,6 +28,7 @@
 
 					    <div class="entry-meta">
 						    <?php twentyten_posted_on(); ?>
+    					        <?php seh_addthis_buttons(); ?>
 					    </div><!-- .entry-meta -->
 				    </header>
 
@@ -37,6 +38,7 @@
 					</div><!-- .entry-content -->
 
                     <footer>
+                			<?php seh_addthis_buttons(); ?>
 					    <div class="entry-utility">
 						    <?php twentyten_posted_in(); ?>
 						    <?php edit_post_link( __( 'Edit', 'twentyten' ), '<span class="edit-link">', '</span>' ); ?>

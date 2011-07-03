@@ -202,3 +202,10 @@ ul#copyright, #copyright li {
 #copyright li {
     padding: 0 5px;
 }
+
+/**
+ * AddThis support
+ **/
+.addthis_toolbox {
+    float: right;
+}

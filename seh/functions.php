@@ -30,8 +30,35 @@ function twentyten_setup() {
 }
 endif;
 
+/**
+ * AddThis support
+ **/
+
+if (! function_exists( 'seh_addthis_buttons' ) ):
+function seh_addthis_buttons() {
+    echo '<div class="addthis_toolbox addthis_default_style">
+        <a class="addthis_button_facebook"></a>
+        <a class="addthis_button_twitter"></a>
+        <a class="addthis_button_email"></a>
+        <a class="addthis_button_google_plusone"></a>
+        <a class="addthis_button_preferred_1"></a>
+        <a class="addthis_button_preferred_2"></a>
+        <a class="addthis_button_compact"></a>
+    </div>';
+}
+endif;
+
+if ( ! function_exists( 'seh_init' ) ):
+function seh_init() {
+    wp_register_script( 'addthis', 'http://s7.addthis.com/js/250/addthis_widget.js' );
+    wp_enqueue_script( 'addthis' );
+}
+endif;
+
+add_action( 'init', 'seh_init' );
+
 if ( ! function_exists( 'seh_remove_widget_areas' ) ):
-function seh_remove_widget_areas(){
+function seh_remove_widget_areas() {
 
 	// Unregsiter the widget areas of the Twenty Ten footer
 	unregister_sidebar( 'first-footer-widget-area' );

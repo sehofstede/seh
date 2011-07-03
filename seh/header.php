@@ -40,6 +40,7 @@
 <link rel="apple-touch-icon" type="image/png"sizes="72x72" href="/apple-touch-icon-ipad.png" />
 <link rel="apple-touch-icon" type="image/png"sizes="114x114" href="/apple-touch-icon-iphone4.png" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+<script type="text/javascript">var addthis_config = {"data_ga_tracker":'UA-687771-4',"data_track_clickback":true,"data_track_addressbar":false,"pubid":'ra-4e105e1c31814cbd',"ui_cobrand":'Sense Hofstede'};</script>
 <?php
 	/* We add some JavaScript to pages with the comment form
 	 * to support sites with threaded comments (when in use).

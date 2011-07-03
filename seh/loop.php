@@ -93,6 +93,7 @@
 			</div><!-- .entry-content -->
             
             <footer>
+        			<?php seh_addthis_buttons(); ?>
 			    <div class="entry-utility">
 			    <?php if ( function_exists( 'get_post_format' ) && 'gallery' == get_post_format( $post->ID ) ) : ?>
 				    <a href="<?php echo get_post_format_link( 'gallery' ); ?>" title="<?php esc_attr_e( 'View Galleries', 'twentyten' ); ?>"><?php _e( 'More Galleries', 'twentyten' ); ?></a>
@@ -123,6 +124,7 @@
 		<?php endif; ?>
 
             <footer>
+        			<?php seh_addthis_buttons(); ?>
 			    <div class="entry-utility">
 				    <?php twentyten_posted_on(); ?>
 				    <span class="meta-sep">|</span>
@@ -155,6 +157,7 @@
 			</div><!-- .entry-content -->
 	<?php endif; ?>
             <footer>
+        			<?php seh_addthis_buttons(); ?>
 			    <div class="entry-utility">
 				    <?php if ( count( get_the_category() ) ) : ?>
 					    <span class="cat-links">
