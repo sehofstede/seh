@@ -1,8 +1,10 @@
-Based on official WordPress theme Twenty Ten. It was developed by the wonderful
-WordPress project.
+Based on WordPress's  TwentyTwelve and on Twitter's Bootstrap.
 
-The original Twenty Ten source code can be downloaded from:
+The original TwentyTwelve source code can be downloaded from:
     <http://wordpress.org/download/source/>.
 
-The differences between Twenty Ten and this theme are the work of:
+The original Twitter Bootstrap source code can be downloaded from:
+    <http://twitter.github.io/bootstrap/>.
+
+The modifications and new work in this theme are the work of:
 Sense Egbert Hofstede <code@sensehofstede.nl>
