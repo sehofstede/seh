@@ -43,6 +43,16 @@ function seh_setup () {
 }
 add_action( 'after_setup_theme', 'seh_setup', 15 );
 
+function seh_twitter_cards ( $twitter_card ) {
+	if ( is_array( $twitter_card ) ) {
+		$twitter_card['creator'] = '@sehof';
+		$twitter_card['creator:id'] = '10872822';
+	}
+
+	return $twitter_card;
+}
+add_filter( 'twitter_cards_properties', 'seh_twitter_cards' );
+
 if ( ! function_exists( 'twentytwelve_entry_meta' ) ) :
 function twentytwelve_entry_meta() {
 	// Translators: used between list items, there is a space after the comma.
