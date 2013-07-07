@@ -5,7 +5,7 @@ Description:    seh, child theme of WordPress's TwentyTwelve with Bootstrap
 Author:         Sense Egbert Hofstede
 Author URI:     http://sehofstede.nl/
 Template:       twentytwelve
-Version:        0.0.2
+Version:        0.1.0
 */
 
 @import url("../twentytwelve/style.css");
@@ -19,6 +19,15 @@ body {
 
 body.home {
 	background: url(images/background.jpg) no-repeat center top;
+}
+
+/**
+ * Text
+ */
+
+code {
+	display: block;
+	white-space: normal;
 }
 
 /**
@@ -84,6 +93,11 @@ footer[role="contentinfo"] {
 	width: 100%;
 }
 
+.site-info {
+	margin-top: 20px;
+	text-align: center;
+}
+
 /**
  * Home
  */
@@ -92,6 +106,7 @@ footer[role="contentinfo"] {
 	background: #fff;
 	border-radius: 10px;
 	margin-top: 20%;
+	overflow: auto;
 }
 
 .persoon h1 a:hover {
@@ -99,14 +114,72 @@ footer[role="contentinfo"] {
 	text-decoration: none;
 }
 
+.persoon ul {
+	margin-bottom: 0;
+}
+
 /**
  * Index
  */
 
-.top-widget {
+.bottom-widget {
 	background: #fff;
 }
 
-.top-widget li {
+.bottom-widget .widgettitle {
+	color: #636363;
+	font-size: 20px;
+}
+
+.bottom-widget li {
 	list-style: none;
+}
+
+/**
+ * Content
+ */
+
+.date-separator {
+	font-size: 23px;
+	text-align: center;
+	margin-bottom: -60px;
+	margin-top: 20px;
+}
+
+.site-content article {
+	border: 0;
+	margin-top: 70px;
+	margin-bottom: 0;
+}
+
+.site-content article .entry-header {
+	position: relative;
+}
+
+.site-content article .entry-header .entry-title {
+	padding-right: 18px;
+}
+
+.site-content article .entry-header i.flag {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 11px;
+	width: 16px;
+}
+
+.site-content article i.flag-dutch {
+	background: url(images/nl.png) no-repeat;
+}
+
+.site-content article i.flag.flag-english {
+	background: url(images/en.png) no-repeat;
+}
+
+.site-content article .entry-header .comments-link {
+	margin-top: 0;
+}
+
+a[rel=tag] {
+	font-style: italic;
 }
