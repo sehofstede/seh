@@ -150,6 +150,7 @@ footer[role="contentinfo"] {
 	border: 0;
 	margin-top: 70px;
 	margin-bottom: 0;
+	position: relative;
 }
 
 .site-content article .entry-header {
@@ -182,4 +183,19 @@ footer[role="contentinfo"] {
 
 a[rel=tag] {
 	font-style: italic;
+}
+
+/**
+ * Jetpack sharing
+ */
+
+.site-content article .sharedaddy {
+	position: absolute;
+	bottom: 19px;
+	right: 19px;
+	width: 140px;
+}
+
+.site-content article .sharedaddy .sd-block {
+	border-top: 0;
 }
