@@ -27,6 +27,13 @@ function sehof_enqueue () {
 }
 add_action( 'wp_enqueue_scripts', 'sehof_enqueue', 15 );
 
+function sehof_remove_sidebars () {
+	// Remove parent's sidebars we don't use
+	unregister_sidebar( 'sidebar-2' );
+	unregister_sidebar( 'sidebar-3' );
+}
+add_action( 'widgets_init', 'sehof_remove_sidebars', 11 );
+
 function sehof_setup () {
 	// Remove functionality from TwentyTwelve we don't offer
 	remove_theme_support ( 'custom-background', 'custom-header' );
