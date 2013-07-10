@@ -34,6 +34,15 @@ function sehof_remove_sidebars () {
 }
 add_action( 'widgets_init', 'sehof_remove_sidebars', 11 );
 
+function sehof_set_locale () {
+	if ( strpos( $_SERVER['HTTP_ACCEPT_LANGUAGE'],'nl' ) !== false ) {
+		return 'nl_NL';
+	} else {
+		return 'en_GB';
+	}
+}
+add_filter( 'locale', 'sehof_set_locale' );
+
 function sehof_setup () {
 	// Add translation support
 	load_theme_textdomain( 'sehof', get_stylesheet_directory() . '/languages' );
