@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2013-07-11 00:40+0100\n"
+"PO-Revision-Date: 2013-07-11 00:45+0100\n"
 "Last-Translator: Sense Egbert Hofstede <code@sehofstede.nl>\n"
 "Language-Team: Sense Egbert Hofstede <code@sehofstede.nl>\n"
 "X-Generator: Poedit 1.5.7\n"
@@ -25,7 +25,7 @@ msgstr "Permalink naar %s"
 
 #: content.php:20
 msgid "Leave a reply"
-msgstr "Leave a reply"
+msgstr "Een reactie plaatsen"
 
 #: content.php:20
 msgid "1 Reply"

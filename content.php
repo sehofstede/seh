@@ -30,7 +30,7 @@
 			<?php endif; ?>
 		</header><!-- .entry-header -->
 
-		<?php if ( !is_single() ) : // Only display full posts when is_single() ?>
+		<?php if ( is_search() ) : // Only display Excerpts for Search ?>
 		<div class="entry-summary">
 			<?php the_excerpt(); ?>
 		</div><!-- .entry-summary -->
