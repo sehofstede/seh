@@ -1,6 +1,6 @@
 	<?php the_date('j F Y', '<h2 class="date-separator">', '</h2>'); ?>
 
-	<article id="post-<?php the_ID(); ?>" <?php post_class('well'); ?> <?php seh_attribute_lang( get_the_ID() ); ?>>
+	<article id="post-<?php the_ID(); ?>" <?php post_class('well'); ?> <?php sehof_attribute_lang( get_the_ID() ); ?>>
 		<?php if ( is_sticky() && is_home() && ! is_paged() ) : ?>
 		<div class="featured-post">
 			<?php _e( 'Featured post', 'twentytwelve' ); ?>

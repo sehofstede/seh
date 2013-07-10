@@ -1,6 +1,6 @@
 <?php
-if ( ! function_exists( 'seh_attribute_lang' ) ) :
-function seh_attribute_lang ( $post_id ) {
+if ( ! function_exists( 'sehof_attribute_lang' ) ) :
+function sehof_attribute_lang ( $post_id ) {
 	if ( in_category( 'dutch-blogposts' ) ) {
 		print ('lang="nl-NL"');
 	} elseif ( in_category( 'english-blogposts' ) ) {
@@ -9,7 +9,7 @@ function seh_attribute_lang ( $post_id ) {
 }
 endif;
 
-function seh_enqueue () {
+function sehof_enqueue () {
 	// Register bootstrap JavaScript
 	wp_register_script( 'bootstrap-script',
 			get_stylesheet_directory_uri() . '/../../bootstrap/js/bootstrap.min.js',
@@ -25,9 +25,9 @@ function seh_enqueue () {
 	// Remove custom font
 	wp_dequeue_style( 'twentytwelve-fonts' );
 }
-add_action( 'wp_enqueue_scripts', 'seh_enqueue', 15 );
+add_action( 'wp_enqueue_scripts', 'sehof_enqueue', 15 );
 
-function seh_setup () {
+function sehof_setup () {
 	// Remove functionality from TwentyTwelve we don't offer
 	remove_theme_support ( 'custom-background', 'custom-header' );
 
@@ -41,9 +41,9 @@ function seh_setup () {
 		'description' => 'This sidebar contains widgets, preferably one, that show below the loop of blog posts.'
 	));
 }
-add_action( 'after_setup_theme', 'seh_setup', 15 );
+add_action( 'after_setup_theme', 'sehof_setup', 15 );
 
-function seh_twitter_cards ( $twitter_card ) {
+function sehof_twitter_cards ( $twitter_card ) {
 	if ( is_array( $twitter_card ) ) {
 		$twitter_card['creator'] = '@sehof';
 		$twitter_card['creator:id'] = '10872822';
@@ -51,7 +51,7 @@ function seh_twitter_cards ( $twitter_card ) {
 
 	return $twitter_card;
 }
-add_filter( 'twitter_cards_properties', 'seh_twitter_cards' );
+add_filter( 'twitter_cards_properties', 'sehof_twitter_cards' );
 
 if ( ! function_exists( 'twentytwelve_entry_meta' ) ) :
 function twentytwelve_entry_meta() {
