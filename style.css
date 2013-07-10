@@ -14,7 +14,7 @@ Version:        0.1.0
 
 body {
 	background: #fff;
-	font-family: 'Vollkorn', 'Charis SIL', 'Garamond', serif;
+	font-family: 'Vollkorn', 'Georgia', serif;
 }
 
 body.home {
@@ -28,6 +28,10 @@ body.home {
 code {
 	display: block;
 	white-space: normal;
+}
+
+.phonetics {
+	font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
 }
 
 /**
