@@ -1,0 +1,132 @@
+# Copyright (C) 2013 Sense Egbert Hofstede
+# This file is distributed under the same license as the sehof package.
+msgid ""
+msgstr ""
+"Project-Id-Version: sehof 0.1.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tags/seh\n"
+"POT-Creation-Date: 2013-07-10 21:40:43+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2013-07-10 23:50+0100\n"
+"Last-Translator: \n"
+"Language-Team: Sense Egbert Hofstede <code@sehofstede.nl>\n"
+"X-Generator: Poedit 1.5.7\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Language: nl_NL\n"
+
+#: content.php:6
+msgid "Featured post"
+msgstr "Uitgelicht bericht"
+
+#: content.php:15
+msgid "Permalink to %s"
+msgstr "Permalink naar %s"
+
+#: content.php:20
+msgid "Leave a reply"
+msgstr "Leave a reply"
+
+#: content.php:20
+msgid "1 Reply"
+msgstr "1 reactie"
+
+#: content.php:20
+msgid "% Replies"
+msgstr "% reacties"
+
+#: content.php:39
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Lees verder <span class=\"meta-nav\">&rarr;</span>"
+
+#: content.php:41
+msgid "Pages:"
+msgstr "Pagina&#39;s:"
+
+#: content.php:48
+msgid "Edit"
+msgstr "Bewerken"
+
+#: footer.php:9
+msgid "Copyright"
+msgstr "Auteursrecht"
+
+#. #-#-#-#-#  seh.pot (sehof 0.1.0)  #-#-#-#-#
+#. Author of the plugin/theme
+#: footer.php:9 front-page.php:6
+msgid "Sense Egbert Hofstede"
+msgstr "Sense Egbert Hofstede"
+
+#: footer.php:11
+msgid "http://wordpress.org/"
+msgstr "http://nl.wordpress.org/"
+
+#: footer.php:11
+msgid "Semantic Personal Publishing Platform"
+msgstr "Semantisch persoonlijk publicatieplatform"
+
+#: footer.php:11
+msgid "Proudly powered by %s"
+msgstr "Ondersteund door %s"
+
+#: functions.php:37
+msgid "Main navigation menu"
+msgstr "Hoofdnavigatiemenu"
+
+#: functions.php:38
+msgid "Home page menu"
+msgstr "Voorpaginamenu"
+
+#: functions.php:44
+msgid ""
+"This sidebar contains widgets, preferably one, that show below the loop of "
+"blog posts."
+msgstr ""
+"Deze zijbalk bevat widgets, het liefst één, die onder de berichtenloop "
+"verschijnen."
+
+#. Translators: used between list items, there is a space after the comma.
+#: functions.php:62
+msgid ", "
+msgstr ","
+
+#. Translators: 1 is the date and 2 is the tag list.
+#: functions.php:74
+msgid "%1$s, tagged %2$s."
+msgstr "%1$s, getagged %2$s."
+
+#: functions.php:76
+msgid "%1$s."
+msgstr "%1$s."
+
+#: index.php:20
+msgid "Nothing Found"
+msgstr "Niets gevonden"
+
+#: index.php:24
+msgid ""
+"Apologies, but no results were found. Perhaps searching will help find a "
+"related post."
+msgstr ""
+"Helaas, er zijn geen resultaten gevonden. Misschien helpt zoeken je om een "
+"gerelateerd bericht te vinden."
+
+#: searchform.php:2
+msgid "Search"
+msgstr "Zoeken"
+
+#. Theme Name of the plugin/theme
+msgid "sehof"
+msgstr "sehof"
+
+#. Theme URI of the plugin/theme
+msgid "htt://sehofstede.nl/"
+msgstr "htt://sehofstede.nl/"
+
+#. Description of the plugin/theme
+msgid "seh, child theme of WordPress's TwentyTwelve with Bootstrap"
+msgstr "seh, kindthema van WordPress's TwentyTwelve met Bootstrap"
+
+#. Author URI of the plugin/theme
+msgid "http://sehofstede.nl/"
+msgstr "http://sehofstede.nl/"

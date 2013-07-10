@@ -6,9 +6,9 @@
 		<div class="site-info">
 			<?php do_action( 'twentytwelve_credits' ); ?>
 			
-			Copyright&nbsp;&copy;&nbsp;2006-<?php echo date("Y"); ?>&nbsp;<a href="<?php echo home_url( '/about/' ) ?>" title="Sense Egbert Hofstede" >Sense Egbert Hofstede</a>.
+			<?php _e( 'Copyright', 'sehof' ); ?>&nbsp;&copy;&nbsp;2006-<?php echo date("Y"); ?>&nbsp;<a href="<?php echo home_url( '/about/' ) ?>" title="<?php _e( 'Sense Egbert Hofstede', 'sehof' ); ?>" ><?php _e( 'Sense Egbert Hofstede', 'sehof' ); ?></a>.
 
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'twentytwelve' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'twentytwelve' ); ?>"><?php printf( __( 'Proudly powered by %s', 'twentytwelve' ), 'WordPress' ); ?></a>
+			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'sehof' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'sehof' ); ?>"><?php printf( __( 'Proudly powered by %s', 'sehof' ), 'WordPress' ); ?></a>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 	<?php endif; ?>

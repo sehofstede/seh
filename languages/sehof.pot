@@ -1,0 +1,129 @@
+# Copyright (C) 2013 Sense Egbert Hofstede
+# This file is distributed under the same license as the sehof package.
+msgid ""
+msgstr ""
+"Project-Id-Version: sehof 0.1.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tags/seh\n"
+"POT-Creation-Date: 2013-07-10 21:56:42+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: content.php:6
+msgid "Featured post"
+msgstr ""
+
+#: content.php:15
+msgid "Permalink to %s"
+msgstr ""
+
+#: content.php:20
+msgid "Leave a reply"
+msgstr ""
+
+#: content.php:20
+msgid "1 Reply"
+msgstr ""
+
+#: content.php:20
+msgid "% Replies"
+msgstr ""
+
+#: content.php:39
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: content.php:41
+msgid "Pages:"
+msgstr ""
+
+#: content.php:48
+msgid "Edit"
+msgstr ""
+
+#: footer.php:9
+msgid "Copyright"
+msgstr ""
+
+#. #-#-#-#-#  sehof.pot (sehof 0.1.0)  #-#-#-#-#
+#. Author of the plugin/theme
+#: footer.php:9 front-page.php:6
+msgid "Sense Egbert Hofstede"
+msgstr ""
+
+#: footer.php:11
+msgid "http://wordpress.org/"
+msgstr ""
+
+#: footer.php:11
+msgid "Semantic Personal Publishing Platform"
+msgstr ""
+
+#: footer.php:11
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: functions.php:37
+msgid "Main navigation menu"
+msgstr ""
+
+#: functions.php:38
+msgid "Home page menu"
+msgstr ""
+
+#: functions.php:42
+msgid "Bottom widget"
+msgstr ""
+
+#: functions.php:44
+msgid ""
+"This sidebar contains widgets, preferably one, that show below the loop of "
+"blog posts."
+msgstr ""
+
+#. Translators: used between list items, there is a space after the comma.
+#: functions.php:62
+msgid ", "
+msgstr ""
+
+#. Translators: 1 is the date and 2 is the tag list.
+#: functions.php:74
+msgid "%1$s, tagged %2$s."
+msgstr ""
+
+#: functions.php:76
+msgid "%1$s."
+msgstr ""
+
+#: index.php:20
+msgid "Nothing Found"
+msgstr ""
+
+#: index.php:24
+msgid ""
+"Apologies, but no results were found. Perhaps searching will help find a "
+"related post."
+msgstr ""
+
+#: searchform.php:2
+msgid "Search"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "sehof"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "htt://sehofstede.nl/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "seh, child theme of WordPress's TwentyTwelve with Bootstrap"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://sehofstede.nl/"
+msgstr ""

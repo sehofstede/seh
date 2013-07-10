@@ -35,17 +35,20 @@ function sehof_remove_sidebars () {
 add_action( 'widgets_init', 'sehof_remove_sidebars', 11 );
 
 function sehof_setup () {
+	// Add translation support
+	load_theme_textdomain( 'sehof', get_stylesheet_directory() . '/languages' );
+
 	// Remove functionality from TwentyTwelve we don't offer
 	remove_theme_support ( 'custom-background', 'custom-header' );
 
-	register_nav_menu( 'primary', 'Header navigation menu' );
-	register_nav_menu( 'home', 'Home page menu' );
+	register_nav_menu( 'primary', __( 'Main navigation menu', 'sehof' ) );
+	register_nav_menu( 'home', __( 'Home page menu', 'sehof' ) );
 
 	// Add custom widget area
 	register_sidebar(array(
-		'name' => 'Bottom widget',
+		'name' => __( 'Bottom widget', 'sehof' ),
 		'id' => 'bottom-widget',
-		'description' => 'This sidebar contains widgets, preferably one, that show below the loop of blog posts.'
+		'description' => __( 'This sidebar contains widgets, preferably one, that show below the loop of blog posts.', 'sehof' )
 	));
 }
 add_action( 'after_setup_theme', 'sehof_setup', 15 );
@@ -63,7 +66,7 @@ add_filter( 'twitter_cards_properties', 'sehof_twitter_cards' );
 if ( ! function_exists( 'twentytwelve_entry_meta' ) ) :
 function twentytwelve_entry_meta() {
 	// Translators: used between list items, there is a space after the comma.
-	$tag_list = get_the_tag_list( '', __( ', ', 'seh' ) );
+	$tag_list = get_the_tag_list( '', __( ', ', 'sehof' ) );
 
 	$date = sprintf( '<a href="%1$s" title="&quot;%2$s&quot;" rel="bookmark"><time class="entry-date" datetime="%3$s">%4$s %5$s</time></a>',
 		esc_url( get_permalink() ),
@@ -75,9 +78,9 @@ function twentytwelve_entry_meta() {
 
 	// Translators: 1 is the date and 2 is the tag list.
 	if ( $tag_list ) {
-		$utility_text = __( '%1$s, tagged %2$s.', 'seh' );
+		$utility_text = __( '%1$s, tagged %2$s.', 'sehof' );
 	} else {
-		$utility_text = __( '%1$s.', 'seh' );
+		$utility_text = __( '%1$s.', 'sehof' );
 	}
 
 	printf(

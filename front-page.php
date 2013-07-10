@@ -3,7 +3,7 @@
 			<div class="span6 offset3 well persoon">
 				<h1>
 					<a href="<?php echo home_url( '/about' ); ?>">
-						Sense Egbert Hofstede
+						<?php _e( 'Sense Egbert Hofstede', 'sehof' ); ?>
 
 						<br/>
 
