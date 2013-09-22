@@ -85,11 +85,24 @@ function twentytwelve_entry_meta() {
 		esc_html( get_the_date() )
 	);
 
+	// Post author
+	if ( 'post' == get_post_type() ) {
+		$attribution = sprintf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></span>',
+			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+			esc_attr( sprintf( __( 'View all posts by %s', 'sehof' ), get_the_author() ) ),
+			get_the_author()
+		);
+	}
+	
 	// Translators: 1 is the date and 2 is the tag list.
 	if ( $tag_list ) {
 		$utility_text = __( '%1$s, tagged %2$s.', 'sehof' );
 	} else {
 		$utility_text = __( '%1$s.', 'sehof' );
+	}
+
+	if ( !empty( $attribution ) ) {
+		$utility_text .= " " . sprintf( __( 'By %1$s.', 'sehof' ), $attribution);
 	}
 
 	printf(
