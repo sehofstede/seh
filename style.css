@@ -195,3 +195,15 @@ footer[role="contentinfo"] {
 a[rel=tag] {
 	font-style: italic;
 }
+
+.site-content article .entry-content blockquote,
+.site-content article.format-quote .entry-content blockquote {
+	color: #333;
+	font-size: 16px;
+	font-style: italic;
+}
+
+.site-content article .entry-content blockquote > footer {
+	font-size: 14px;
+	font-style: normal;
+}
