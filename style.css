@@ -118,7 +118,14 @@ footer[role="contentinfo"] {
 	text-decoration: none;
 }
 
-.persoon ul {
+.persoon p a {
+	color: #999;
+}
+
+.persoon ul.nav {
+	font-size: 1.3em;
+	font-weight: bold;
+	letter-spacing: 1px;
 	margin-bottom: 0;
 }
 
